@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>is it fixed yet?</title>
+  </head>
+  <body>
+
+    <a href="<%= loginUrl %>">Login using github</a>
+
+    <% if(typeof error != 'undefined') { %>
+    <h1><%= error.error %></h1>
+    <p><%= error.error_description %> <a href="<%= error.error_uri %>">Help?</a></p>
+    <% } %>
+
+  </body>
+</html>

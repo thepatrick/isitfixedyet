@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>is it fixed yet?</title>
+  </head>
+  <body>
+
+    <h1>Hello <%= user.login %>!</h1>
+
+    <a href="/repos">
+      <img src="<%= user.avatar_url %>" width="64" height="64">
+      <%= user.login %>
+    </a><br>
+
+    <% orgs.forEach(function(org) { %>
+    <a href="/repos?org=<%= encodeURIComponent(org.login) %>">
+      <img src="<%= org.avatar_url %>" width="64" height="64">
+      <%= org.login %>
+    </a><br>
+    <% }); %>
+
+  </body>
+</html>

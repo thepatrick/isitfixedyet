@@ -1,0 +1,56 @@
+{
+  "name": "isitfixedyet",
+  "version": "0.1.0",
+  "homepage": "https://github.com/thepatrick/isitfixedyet",
+  "author": {
+    "name": "Patrick Quinn-Graham",
+    "email": "make-contact@pftqg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thepatrick/isitfixedyet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thepatrick/isitfixedyet/issues"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.26"
+  },
+  "dependencies": {
+    "express": "^3.2.6",
+    "ejs": "^1.0.0",
+    "q": "^1.0.1",
+    "uuid": "^1.4.1",
+    "request": "^2.34.0",
+    "redis": "^0.10.1",
+    "hiredis": "^0.1.16",
+    "uri-template": "^0.4.1",
+    "parse-link-header": "^0.1.0"
+  },
+  "devDependencies": {},
+  "jshintConfig": {
+    "globals": {},
+    "globalstrict": true,
+    "node": true,
+    "browser": true,
+    "esnext": true,
+    "strict": false,
+    "camelcase": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "expr": true,
+    "indent": 2,
+    "latedef": true,
+    "maxlen": 100,
+    "newcap": true,
+    "quotmark": "single",
+    "smarttabs": true,
+    "trailing": true,
+    "undef": true,
+    "unused": true
+  }
+}
