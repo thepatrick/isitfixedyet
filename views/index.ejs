@@ -7,17 +7,21 @@
 
     <h1>Hello <%= user.login %>!</h1>
 
+    <p>Please pick an organisation:</p>
+
     <a href="/repos">
       <img src="<%= user.avatar_url %>" width="64" height="64">
       <%= user.login %>
     </a><br>
 
     <% orgs.forEach(function(org) { %>
-    <a href="/repos?org=<%= encodeURIComponent(org.login) %>">
+    <a href="/repos/<%= encodeURIComponent(org.login) %>">
       <img src="<%= org.avatar_url %>" width="64" height="64">
       <%= org.login %>
     </a><br>
     <% }); %>
+
+    <a href="/g/logout">Logout</a>
 
   </body>
 </html>

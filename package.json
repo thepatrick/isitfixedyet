@@ -29,7 +29,8 @@
     "redis": "^0.10.1",
     "hiredis": "^0.1.16",
     "uri-template": "^0.4.1",
-    "parse-link-header": "^0.1.0"
+    "parse-link-header": "^0.1.0",
+    "coffee-script": "~1.7.1"
   },
   "devDependencies": {},
   "jshintConfig": {
